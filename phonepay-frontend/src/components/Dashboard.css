@@ -1,0 +1,196 @@
+/* General layout */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard, .form-page, .history-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4a148c;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar button {
+  background: #ff7043;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navbar button:hover {
+  background: #f4511e;
+}
+
+/* Balance card */
+.balance-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.balance-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.balance-card h1 {
+  margin: 10px 0 0;
+  font-size: 32px;
+  color: #2e7d32;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.action-card {
+  flex: 1;
+  margin: 0 10px;
+  background: #6a1b9a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.action-card:hover {
+  background: #8e24aa;
+}
+
+/* Forms */
+.form-page input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.form-page h2{
+  background: #5F259F;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+.form-page button {
+  margin: 10px 5px 0 0;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4a148c;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-page button:hover {
+  background: #6a1b9a;
+}
+
+/* Transaction history */
+/* History page */
+.history-page {
+  background: #f5f7fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Purple header style */
+.history-page h2{
+  background: #5F259F;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+/* Transaction cards */
+.transaction-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.transaction-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Success vs Failed colors */
+.transaction-card.success span {
+  color: #4caf50; /* green */
+}
+
+.transaction-card.failed span {
+  color: #e53935; /* red */
+}
+
+.transaction-card p {
+  margin: 0;
+  font-weight: 600;
+  color: #4a148c; /* purple accent */
+}
+
+.transaction-card span {
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.transaction-meta {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Back button */
+.history-page button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #6a1b9a;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.history-page button:hover {
+  background: #8e24aa;
+}
